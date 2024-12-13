@@ -3,7 +3,7 @@
 # array for source and target file pairs :)
 declare -A file_pairs=(
     ['/home/farzad/.atamanrc.config']='/home/farzad/.dotfiles/ataman/.atamanrc.config'
-    #["/path/to/source/file1.txt"]="/path/to/repo/tracked_file1.txt"
+    ['/home/farzad/.ideavimrc']='/home/farzad/.dotfiles/intellij/.ideavimrc'
 )
 
 for SOURCE_FILE in "${!file_pairs[@]}"; do

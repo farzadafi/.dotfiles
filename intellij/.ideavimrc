@@ -1,5 +1,15 @@
 let mapleader = " "
 
+""" =====================================================|
+""" ------------------------PLUGIN-----------------------|
+""" =====================================================|
+""" comment line with 'gc' or 'gcc' keys :)
+set commentary
+
+
+
+
+
 nmap <leader>h :action PreviousTab<CR>
 nmap <leader>l :action NextTab<CR>
 nmap <leader>p :action SelectInProjectView<CR>

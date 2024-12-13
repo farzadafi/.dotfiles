@@ -1,0 +1,6 @@
+let mapleader = " "
+
+nmap <leader>h :action PreviousTab<CR>
+nmap <leader>l :action NextTab<CR>
+nmap <leader>p :action SelectInProjectView<CR>
+

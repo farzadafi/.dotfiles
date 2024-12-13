@@ -5,9 +5,7 @@ let mapleader = " "
 """ =====================================================|
 """ comment line with 'gc' or 'gcc' keys :)
 set commentary
-
-
-
+Plug 'machakann/vim-highlightedyank'
 
 
 nmap <leader>h :action PreviousTab<CR>

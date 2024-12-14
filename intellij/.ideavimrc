@@ -22,5 +22,8 @@ set incsearch
 nmap <leader>h :action PreviousTab<CR>
 nmap <leader>l :action NextTab<CR>
 nmap <leader>p :action SelectInProjectView<CR>
+nmap <leader>g :action FindInPath<CR>
+nmap <leader>d :action Debug<CR>
+nmap <leader>r :action RenameElement<CR>
 
 

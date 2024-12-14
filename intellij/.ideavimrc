@@ -7,8 +7,20 @@ let mapleader = " "
 set commentary
 Plug 'machakann/vim-highlightedyank'
 
+""" =====================================================|
+""" ------------------------COMMON-----------------------|
+""" =====================================================|
+""" This command sets the "scroll offset" in Vim.
+set so=10
+""" This command enables incremental search in Vim.
+set incsearch
 
+
+""" =====================================================|
+""" ------------------------MAPPING----------------------|
+""" =====================================================|
 nmap <leader>h :action PreviousTab<CR>
 nmap <leader>l :action NextTab<CR>
 nmap <leader>p :action SelectInProjectView<CR>
+
 

@@ -4,27 +4,31 @@ let mapleader = " "
 """ =====================================================|
 """ -----------------------SETTING-----------------------|
 """ =====================================================|
-""" comment line with 'gc' or 'gcc' keys :)
+""" allowing users to easily comment and uncomment lines of code using commands
+""" like gc or gcc for commenting out selected lines or paragraphs.
 set commentary
 
-""" highlight line's that yank!
-Plug 'machakann/vim-highlightedyank'
+""" enables a feature that briefly highlights the text you have just yanked (copied),
+""" providing a visual indication of the yanked content to help confirm the action.
+set highlightedyank
 
-""" This command sets the "scroll offset" in Vim.
+""" ensures that there are always 10 lines visible above and below the cursor when scrolling.
 set scrolloff=10
 
-""" This command enables incremental search in Vim.
+""" enables incremental search, allowing the cursor to move to the next match as
+""" you type your search query, providing real-time feedback on search results.
 set incsearch
 
-""" enable number line
+""" enables the display of absolute line numbers for each line in the editor,
+""" allowing users to easily reference and navigate to specific lines in their code or text files.
 set number
 
-""" enables relative line numbering, where the current line is displayed as 0, -
-""" - and all other lines are numbered based on their distance from the current line
+""" enables relative line numbering, where the current line is displayed as 0,
+""" and all other lines are numbered based on their distance from the current line
 set relativenumber
 
-""" enables the display of the current Vim mode (such as normal, insert, or visual) -
-""" - at the bottom of the editor, helping users to identify which mode they are currently in.
+""" enables the display of the current Vim mode (such as normal, insert, or visual)
+""" at the bottom of the editor, helping users to identify which mode they are currently in.
 set showmode
 
 """ =====================================================|

@@ -1,20 +1,31 @@
+""" set space as leader key in vim :)
 let mapleader = " "
 
 """ =====================================================|
-""" ------------------------PLUGIN-----------------------|
+""" -----------------------SETTING-----------------------|
 """ =====================================================|
 """ comment line with 'gc' or 'gcc' keys :)
 set commentary
+
+""" highlight line's that yank!
 Plug 'machakann/vim-highlightedyank'
 
-""" =====================================================|
-""" ------------------------COMMON-----------------------|
-""" =====================================================|
 """ This command sets the "scroll offset" in Vim.
-set so=10
+set scrolloff=10
+
 """ This command enables incremental search in Vim.
 set incsearch
 
+""" enable number line
+set number
+
+""" enables relative line numbering, where the current line is displayed as 0, -
+""" - and all other lines are numbered based on their distance from the current line
+set relativenumber
+
+""" enables the display of the current Vim mode (such as normal, insert, or visual) -
+""" - at the bottom of the editor, helping users to identify which mode they are currently in.
+set showmode
 
 """ =====================================================|
 """ ------------------------MAPPING----------------------|
@@ -30,6 +41,3 @@ nmap <leader>r :action RenameElement<CR>
 """ =====================================================|
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>
-
-
-

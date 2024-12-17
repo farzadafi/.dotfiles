@@ -19,6 +19,10 @@ set scrolloff=10
 """ you type your search query, providing real-time feedback on search results.
 set incsearch
 
+""" enables highlighting of all matches for the last searched pattern in IdeaVim,
+""" making it easier to see search results in the text.
+set hlsearch
+
 """ enables the display of absolute line numbers for each line in the editor,
 """ allowing users to easily reference and navigate to specific lines in their code or text files.
 set number
@@ -30,6 +34,14 @@ set relativenumber
 """ enables the display of the current Vim mode (such as normal, insert, or visual)
 """ at the bottom of the editor, helping users to identify which mode they are currently in.
 set showmode
+
+""" displays partially typed commands in the status line at the bottom of the screen.
+set showcmd
+
+""" enables case-insensitive searching in IdeaVim, but if the search pattern
+""" contains any uppercase letters, it switches to case-sensitive searching.
+set smartcase
+
 
 """ =====================================================|
 """ ------------------------MAPPING----------------------|

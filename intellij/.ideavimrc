@@ -48,6 +48,10 @@ set smartcase
 set clipboard+=unnamed
 set clipboard+=unnamedplus
 
+""" enable a feature in IdeaVim that enhances the way lines are
+""" joined together in JetBrains IDEs
+set ideajoin
+
 
 
 

@@ -42,6 +42,14 @@ set showcmd
 """ contains any uppercase letters, it switches to case-sensitive searching.
 set smartcase
 
+""" use the system clipboard for all yank (copy) and paste operations,
+""" allowing you to copy text from IdeaVim directly to the system clipboard
+""" and paste it into other applications.
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+
+
+
 
 """ =====================================================|
 """ ------------------------MAPPING----------------------|

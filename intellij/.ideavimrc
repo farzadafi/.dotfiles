@@ -48,11 +48,31 @@ set smartcase
 set clipboard+=unnamed
 set clipboard+=unnamedplus
 
+""" ----> setting specific for Idea
 """ enable a feature in IdeaVim that enhances the way lines are
 """ joined together in JetBrains IDEs
 set ideajoin
 
+""" determines the mode that is used when a refactoring action selects text.
+""" By default, this mode is set to "select," which means that when you initiate a refactoring,
+""" the editor will switch to select mode, allowing you to modify the selected text directly.
+idearefactormode=keep
 
+""" =====================================================|
+""" -------------------SETTING HANDLER-------------------|
+""" =====================================================|
+
+""" this typically moves to the next item in the jump list.
+sethandler <C-i> n-v-i:vim
+
+""" This command is used to jump to the previous position in the jump list.
+sethandler <C-o> n-v-i:vim
+
+""" Used for scrolling down half a page in Vim.
+sethandler <C-d> n-v-i:vim
+
+""" This command scrolls up half a page in Vim.
+sethandler <C-u> n-v-i:vim
 
 
 """ =====================================================|

@@ -74,7 +74,6 @@ sethandler <C-d> n-v-i:vim
 """ This command scrolls up half a page in Vim.
 sethandler <C-u> n-v-i:vim
 
-
 """ =====================================================|
 """ ------------------------MAPPING----------------------|
 """ =====================================================|
@@ -85,7 +84,26 @@ nmap <leader>r :action RenameElement<CR>
 
 
 """ =====================================================|
-""" -----------------NORMAL MODE MAPPING-----------------|
+""" --------- NON_RECURSIVE MAPPING IN NORMAL MODE ------|
 """ =====================================================|
+""" allows you to remove the inner word under the cursor while discarding
+""" the deleted text instead of saving it to the clipboard.
+nnoremap ciw "_ciw
+
+""" like ciw, but remove any space after word too :)
+nnoremap caw "_caw
+
+""" allows you to change the entire line where the cursor is located
+""" while discarding the deleted text instead of saving it to the clipboard.
+nnoremap C "_C
+
+""" allows you to remove the current line (or the text selected by the cc command)
+""" without affecting the clipboard.
+nnoremap cc "_cc
+
+""" This allows you to copy just the text from the cursor's position to the
+""" end of that line without adding a new line when pasting.
+nnoremap Y y$
+
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>

@@ -8,6 +8,11 @@ let mapleader = " "
 """ like gc or gcc for commenting out selected lines or paragraphs.
 set commentary
 
+""" for which-key plugin
+set which-key
+set notimeout
+set timeoutlen=5000
+
 """ enables a feature that briefly highlights the text you have just yanked (copied),
 """ providing a visual indication of the yanked content to help confirm the action.
 set highlightedyank
@@ -104,6 +109,10 @@ nnoremap cc "_cc
 """ This allows you to copy just the text from the cursor's position to the
 """ end of that line without adding a new line when pasting.
 nnoremap Y y$
+
+""" When you delete something using "_d, it effectively deletes the text without saving
+""" it to any register. This means that whatever text is deleted will not be available for pasting later.
+nnoremap d "_d
 
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>

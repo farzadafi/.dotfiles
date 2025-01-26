@@ -118,5 +118,9 @@ nnoremap d "_d
 """ it to any register. This means that whatever text is deleted will not be available for pasting later.
 nnoremap D "_D
 
+""" When you delete text using this register, it does not save the deleted content to any of the regular
+""" registers (like the unnamed register). Therefore, anything deleted with this command cannot be pasted back later.
+nnoremap dd "_dd
+
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>

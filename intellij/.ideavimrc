@@ -122,5 +122,11 @@ nnoremap D "_D
 """ registers (like the unnamed register). Therefore, anything deleted with this command cannot be pasted back later.
 nnoremap dd "_dd
 
+""" When you press Alt + p, this mapping effectively deletes the word under the cursor without saving it
+""" to any register and then pastes whatever was last copied or cut (if any) at that position.
+""" If there was no previous text copied or cut, nothing will be pasted, as the black hole register
+"""does not retain deleted content.
+nnoremap <a-p> "_diwP
+
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>

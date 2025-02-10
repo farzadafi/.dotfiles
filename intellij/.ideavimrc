@@ -66,6 +66,9 @@ idearefactormode=keep
 """ =====================================================|
 """ -------------------SETTING HANDLER-------------------|
 """ =====================================================|
+""" sethandler: This command allows you to specify how shortcuts are handled by IdeaVim.
+""" C = Ctrl key
+""" n-v-i:vim=normal, visual and insert mode
 
 """ this typically moves to the next item in the jump list.
 sethandler <C-i> n-v-i:vim

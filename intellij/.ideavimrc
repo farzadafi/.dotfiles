@@ -178,3 +178,25 @@ map E ]w
 nnoremap n nzz
 """ Repeat search backward and center the cursor.
 nnoremap N Nzz
+
+nnoremap <C-o> :action Back<cr>
+nnoremap <C-i> :action Forward<cr>
+
+""" Window navigation
+""" Move to the left window in a split
+nnoremap <c-h> <c-w>h
+""" Move to the down window in a split
+nnoremap <c-j> <c-w>j
+""" Move to the upper window in a split
+nnoremap <c-k> <c-w>k
+""" Move to the right window in a split
+nnoremap <c-l> <c-w>l
+
+nnoremap <a-w> :action CloseAllEditorsButActive<cr>
+nnoremap <a-q> :action CloseContent<cr>
+nnoremap <a-t> :action NewScratchFile<cr>
+nnoremap <leader>wv :action SplitVertically<cr>
+nnoremap <leader>ws :action SplitHorizontally<cr>
+nnoremap <leader>wc :action Unsplit<cr>
+nnoremap <leader>wp :action MoveEditorToOppositeTabGroup<cr>
+nnoremap <Leader>wn :action EditSourceInNewWindow<cr>

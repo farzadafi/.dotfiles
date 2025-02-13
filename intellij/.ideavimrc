@@ -133,3 +133,48 @@ nnoremap <a-p> "_diwP
 
 nnoremap m :tabnext<CR>
 nnoremap M :tabp<CR>
+
+""" Move current line up. a=alt
+nnoremap <a-k> :m .-2<CR>
+""" Move current line down.
+nnoremap <a-j> :m .+1<CR>
+""" Delete word
+nnoremap <a-d> "_diw
+""" change word -> delete word and go to insert mode
+nnoremap <a-c> "_ciw
+""" change inside quotes(assuming double quotes)
+nnoremap <a-z> "_ci"
+""" change inside parentheses.
+nnoremap <a-x> "_ci(
+
+""" visual all of method's
+nnoremap vam j:action MethodUp<cr>0v]M
+""" visual inner of method's
+nnoremap vim j:action MethodUp<cr>]m<cr>v]M<bs>
+""" delete all of method's
+nnoremap dam j:action MethodUp<cr>0v]M"_d
+""" delete inner of method's
+nnoremap dim j:action MethodUp<cr>]m<cr>v]M<bs>"_d
+""" yank all of method's
+nnoremap yam j:action MethodUp<cr>0v]My
+""" yank inner of method's
+nnoremap yim j:action MethodUp<cr>]m<cr>v]M<bs>y
+""" change all of method's
+nnoremap cam j:action MethodUp<cr>0v]M"_c
+""" change inner of method's
+nnoremap cim j:action MethodUp<cr>]m<cr>v]M<bs>"_c
+
+""" Move to the beginning of the line.
+nnoremap H ^
+""" Move to the end of the line.
+nnoremap L $
+""" like w but for camel case
+map W [w
+""" like b but for camel case
+map B [b
+""" like e but for camel case
+map E ]w
+""" Repeat search forward and center the cursor.
+nnoremap n nzz
+""" Repeat search backward and center the cursor.
+nnoremap N Nzz

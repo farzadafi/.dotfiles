@@ -191,7 +191,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 """ Move to the right window in a split
 nnoremap <c-l> <c-w>l
-
 nnoremap <a-w> :action CloseAllEditorsButActive<cr>
 nnoremap <a-q> :action CloseContent<cr>
 nnoremap <a-t> :action NewScratchFile<cr>
@@ -200,3 +199,19 @@ nnoremap <leader>ws :action SplitHorizontally<cr>
 nnoremap <leader>wc :action Unsplit<cr>
 nnoremap <leader>wp :action MoveEditorToOppositeTabGroup<cr>
 nnoremap <Leader>wn :action EditSourceInNewWindow<cr>
+
+" Find (leader f)
+nnoremap ;; :nohlsearch<cr>
+map <leader>fe :action GotoClass<cr>
+map <leader>fn :action GotoFile<cr>
+map <leader>fp :action ManageRecentProjects<cr>
+map <leader>fa :action GotoAction<cr>
+map <leader>fg :action FindInPath<cr>
+map <leader>fh :action RecentFiles<cr>
+map <leader>fm :action RecentLocations<cr>
+map <leader>fs :action GotoSymbol<cr>
+map <leader>fd :action Find<cr>
+map <leader>fr :action Replace<cr>
+map <leader>fR :action ReplaceInPath<cr>
+map <leader>fx :action PasteMultiple<cr>
+map <leader>ft :action ActivateTODOToolWindow<cr>

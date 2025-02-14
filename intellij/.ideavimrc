@@ -215,3 +215,17 @@ map <leader>fr :action Replace<cr>
 map <leader>fR :action ReplaceInPath<cr>
 map <leader>fx :action PasteMultiple<cr>
 map <leader>ft :action ActivateTODOToolWindow<cr>
+
+" Views (leader v)
+map <leader>o :action ActivateProjectToolWindow<cr>
+map <leader>vp :action ActivateProblemsViewToolWindow<cr>
+map <leader>vs :action ActivateStructureToolWindow<cr>
+map <leader>vt :action ActivateTerminalToolWindow<cr>
+map <leader>vt :action ActivateTerminalToolWindow<cr>
+map <leader>vv :action ActivateServicesToolWindow<cr>
+map <leader>vd :action ActivateDebugToolWindow<cr>
+map <leader>vg :action ActivateVersionControlToolWindow<cr>
+map <leader>vo :action ActivateTODOToolWindow<cr>
+map <leader>vc :action ActivateGitHubCopilotChatToolWindow<cr>
+map <leader>vq :action CloseActiveTab<cr>
+

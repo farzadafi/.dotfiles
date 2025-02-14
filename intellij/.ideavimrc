@@ -246,3 +246,19 @@ nnoremap <leader>dc :action Resume<cr>
 map <leader>dx :action QuickEvaluateExpression<cr>
 map <leader>dt :action EvaluateExpression<cr>
 map <leader>dw :action Debugger.AddToWatch<cr>
+
+" Code navigation (leader c)
+nnoremap <leader>cd :action GotoDeclaration<cr>
+nnoremap <leader>ct :action GotoTypeDeclaration<cr>
+nnoremap <leader>ci :action GotoImplementation<cr>
+nnoremap <leader>cs :action GotoSuperMethod<cr>
+nnoremap <leader>cr :action ShowUsages<cr>
+nnoremap <leader>cu :action HighlightUsagesInFile<cr>
+nnoremap <leader>cv :action QuickJavaDoc<cr>
+nnoremap <leader>ch :action CallHierarchy<CR>
+nnoremap <Leader>cc  :bd<CR>
+nnoremap <leader>cn :action ShowNavBar<CR>
+nnoremap <leader>cx :action FileStructurePopup<CR>
+nnoremap <leader>cb :action CompileDirty<CR>
+nnoremap <leader>cp :action ParameterInfo<CR>
+nnoremap <leader>ck :action QuickImplementations<CR>

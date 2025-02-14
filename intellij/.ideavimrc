@@ -8,11 +8,6 @@ let mapleader = " "
 """ like gc or gcc for commenting out selected lines or paragraphs.
 set commentary
 
-""" for which-key plugin
-set which-key
-set notimeout
-set timeoutlen=5000
-
 """ enables a feature that briefly highlights the text you have just yanked (copied),
 """ providing a visual indication of the yanked content to help confirm the action.
 set highlightedyank

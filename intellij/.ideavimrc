@@ -286,3 +286,25 @@ nnoremap <leader>se :action GenerateEquals<cr>
 nnoremap <leader>so :action OverrideMethods<cr>
 nnoremap <leader>sn :action NewClass<cr>
 nnoremap <leader>sf :action NewFile<cr>
+
+" Errors and diagnostics (leader e)
+map <leader>en :action GotoNextError<cr>
+map <leader>ep :action GotoPreviousError<cr>
+
+" Git (leader g)
+map <leader>gd :action Compare.LastVersion<cr>
+map <leader>gn :action NextDiff<cr>
+map <leader>gp :action PreviousDiff<cr>
+
+" Display Modes (leader m)
+map <leader>mf :action ToggleFullScreen<cr>
+
+"========for forward and back cursor to last change
+map <leader>b :action Back<cr>
+map <leader>n :action Forward<cr>
+
+"toggle (leader t)===========
+map <leader>th :action ToggleInlineHintsAction<cr>
+
+" for select text auto
+map , :action EditorSelectWord<cr>

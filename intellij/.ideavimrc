@@ -257,6 +257,8 @@ nnoremap <leader>cx :action FileStructurePopup<CR>
 nnoremap <leader>cb :action CompileDirty<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
 nnoremap <leader>ck :action QuickImplementations<CR>
+map <leader>cR :action Run<CR>
+
 
 " Refactoring (leader r)
 map <leader>re :action Refactorings.QuickListPopupAction<CR>

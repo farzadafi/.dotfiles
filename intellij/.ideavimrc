@@ -1,6 +1,9 @@
 """ set space as leader key in vim :)
 let mapleader = " "
 
+set which-key
+set notimeout
+set timeoutlen=5000
 """ =====================================================|
 """ -----------------------SETTING-----------------------|
 """ =====================================================|
@@ -53,6 +56,8 @@ set clipboard+=unnamedplus
 """ joined together in JetBrains IDEs
 set ideajoin
 
+set nerdtree
+
 """ determines the mode that is used when a refactoring action selects text.
 """ By default, this mode is set to "select," which means that when you initiate a refactoring,
 """ the editor will switch to select mode, allowing you to modify the selected text directly.
@@ -78,15 +83,6 @@ sethandler <C-d> n-v-i:vim
 sethandler <C-u> n-v-i:vim
 
 """ =====================================================|
-""" ------------------------MAPPING----------------------|
-""" =====================================================|
-nmap <leader>p :action SelectInProjectView<CR>
-nmap <leader>g :action FindInPath<CR>
-nmap <leader>d :action Debug<CR>
-nmap <leader>r :action RenameElement<CR>
-
-
-""" =====================================================|
 """ --------- NON_RECURSIVE MAPPING IN NORMAL MODE ------|
 """ =====================================================|
 """ allows you to remove the inner word under the cursor while discarding
@@ -100,9 +96,9 @@ nnoremap caw "_caw
 """ while discarding the deleted text instead of saving it to the clipboard.
 nnoremap C "_C
 
-""" allows you to remove the current line (or the text selected by the cc command)
+""" allows  to remove the current line (or the text selected by the cc command)
 """ without affecting the clipboard.
-nnoremap cc "_cc
+nnoremap cc "
 
 """ This allows you to copy just the text from the cursor's position to the
 """ end of that line without adding a new line when pasting.
@@ -183,17 +179,17 @@ nnoremap <c-h> <c-w>h
 """ Move to the down window in a split
 nnoremap <c-j> <c-w>j
 """ Move to the upper window in a split
-nnoremap <c-k> <c-w>k
+nnoremap <c-k> <c-w>K
 """ Move to the right window in a split
 nnoremap <c-l> <c-w>l
 nnoremap <a-w> :action CloseAllEditorsButActive<cr>
 nnoremap <a-q> :action CloseContent<cr>
-nnoremap <a-t> :action NewScratchFile<cr>
 nnoremap <leader>wv :action SplitVertically<cr>
 nnoremap <leader>ws :action SplitHorizontally<cr>
 nnoremap <leader>wc :action Unsplit<cr>
-nnoremap <leader>wp :action MoveEditorToOppositeTabGroup<cr>
+nnoremap <leader>wo :action MoveEditorToOppositeTabGroup<cr>
 nnoremap <Leader>wn :action EditSourceInNewWindow<cr>
+nmap <leader>wp :action SelectInProjectView<CR>
 
 " Find (leader f)
 nnoremap ;; :nohlsearch<cr>
@@ -223,6 +219,7 @@ map <leader>vg :action ActivateVersionControlToolWindow<cr>
 map <leader>vo :action ActivateTODOToolWindow<cr>
 map <leader>vc :action ActivateGitHubCopilotChatToolWindow<cr>
 map <leader>vq :action CloseActiveTab<cr>
+map <leader>vq :action CloseEditor<CR>
 
 " Debug (leader d)
 nnoremap <leader>de :action Debug<cr>
@@ -257,8 +254,6 @@ nnoremap <leader>cx :action FileStructurePopup<CR>
 nnoremap <leader>cb :action CompileDirty<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
 nnoremap <leader>ck :action QuickImplementations<CR>
-map <leader>cR :action Run<CR>
-
 
 " Refactoring (leader r)
 map <leader>re :action Refactorings.QuickListPopupAction<CR>
